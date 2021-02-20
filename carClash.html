@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Clash..!</title>
+    <link rel="icon" href="./img/icons8-car-fire-50.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="startScreen">
+      <div class="Player1">
+        <h1>Player 1</h1>
+        <h3>Instructions :</h3>
+        <p>
+          &nbsp; Use w,s,d to move.<br />
+          &nbsp; Avoid enemy cars.<br />
+          &nbsp; Collect fuel.<br />
+          &nbsp; Whoever finishes first wins.<br />
+        </p>
+        <h4 class="chooseCarLeft">Choose your car :</h4>
+        <picture
+          ><img src="./img/playercar-blue.png" class="carPlayer1Blue" />
+        </picture>
+        <picture
+          ><img
+            src="./img/playercar-lightblue.png"
+            class="carPlayer1Lightblue"
+          />
+        </picture>
+        <picture
+          ><img src="./img/playercar-orange.png" class="carPlayer1Orange" />
+        </picture>
+      </div>
+
+      <div class="Player2">
+        <h1>Player 2</h1>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h3>Instructions:</h3>
+        <p>
+          &nbsp; Use Arrow Keys to move.<br />
+          &nbsp; Avoid enemy cars.<br />
+          &nbsp; Collect fuel.<br />
+          &nbsp; Whoever finishes first wins.<br />
+        </p>
+        <h4 class="chooseCarRight">Choose your car :</h4>
+        <picture>
+          <img src="./img/playercar-blue.png" class="carPlayer2Blue" />
+        </picture>
+        <picture>
+          <img
+            src="./img/playercar-lightblue.png"
+            class="carPlayer2Lightblue"
+          />
+        </picture>
+        <picture
+          ><img src="./img/playercar-orange.png" class="carPlayer2Orange" />
+        </picture>
+      </div>
+      <p class="playerReady">Let's Race !!</p>
+    </div>
+
+    <div class="gameArea hide">
+      <div class="gameAreaLeft"></div>
+      <div class="gameAreaRight"></div>
+
+      <div class="playerStatsLeft">
+        <progress class="fuelMeterLeft" value="100" max="100"></progress>
+        <p class="fuelLabel">Player 1's Fuel</p>
+        <div class="distanceRemainingPlayer1">Distance:</div>
+      </div>
+      <div class="scorePlayer1">Score:</div>
+
+      <div class="playerStatsRight">
+        <progress class="fuelMeterRight" value="100" max="100"></progress>
+        <p class="fuelLabel">Player 2's Fuel</p>
+        <div class="distanceRemainingPlayer2">Distance:</div>
+      </div>
+      <div class="scorePlayer2">Score:</div>
+    </div>
+
+    <div class="raceResult hide"></div>
+
+    <div class="endScreen hide">
+      <h3 class="title">Car Clash..!</h3>
+      <div class="player1Scorecard">
+        <h3 class="player">Player 1</h3>
+        <p class="laptimePlayer1"></p>
+        <p class="fuelcollectedPlayer1"></p>
+        <p class="carCollisionPlayer1"></p>
+        <p class="totalPlayer1"></p>
+      </div>
+      <div class="player2Scorecard">
+        <h3 class="player">Player 2</h3>
+        <p class="laptimePlayer2"></p>
+        <p class="fuelcollectedPlayer2"></p>
+        <p class="carCollisionPlayer2"></p>
+        <p class="totalPlayer2"></p>
+      </div>
+      <h2 class="result"></h2>
+      <h2 class="restart">Restart</h2>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
